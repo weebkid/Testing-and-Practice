@@ -1,3 +1,5 @@
+//Author: Jamar Plummer
+// Description: A classwork activity. Create a menu driven application split into functions
 #include <stdio.h>
 
 void print_result(float val);
