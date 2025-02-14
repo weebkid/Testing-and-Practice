@@ -1,3 +1,5 @@
+//Author: Jamar Plummer
+//Description: A classwork activity. Create a menu driven program with sorting and searching functions.
 #include <stdio.h>
 
 int main(){
