@@ -149,12 +149,11 @@ double bubble(int arr[SIZE]){
 double insert(int arr[SIZE]){
     double time1 = clock(), timediff; // Stopwatch starts
 
-    for (int i = 1; i < 10; ++i){
+    for (int i = 1; i < SIZE; ++i){
         int key = arr[i];
         int j = i - 1;
 
         while ( j >= 0 && arr[j] > key){
-            printf("arr[i] = %d\narr[j] = %d\narr[j+1] = %d\n\n", arr[i], arr[j], arr[j+1]);
             arr[j + 1] = arr[j];
             
             j = j - 1;
@@ -164,7 +163,7 @@ double insert(int arr[SIZE]){
     }
 
     timediff = (clock() - time1) / CLOCKS_PER_SEC; // Stopwatch finishes
-    for (int x = 0; x < 100; x++){
+    for (int x = 0; x < 12; x++){
         printf("%d ", arr[x]);
     }
     return timediff;
